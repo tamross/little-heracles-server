@@ -1,6 +1,5 @@
 {
   "name": "Results",
-  "plural": "results",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,27 +10,21 @@
   "relations": {
     "athlete": {
       "type": "hasOne",
-      "model": "users",
+      "model": "Users",
       "foreignKey": ""
     },
     "event": {
       "type": "hasOne",
-      "model": "events",
+      "model": "Events",
       "foreignKey": ""
     },
     "competition": {
       "type": "hasOne",
-      "model": "competition",
+      "model": "Competition",
       "foreignKey": ""
     }
   },
   "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
     {
       "accessType": "*",
       "principalType": "ROLE",

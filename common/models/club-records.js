@@ -1,3 +1,3 @@
-module.exports = function(Clubrecords) {
+module.exports = function(ClubRecords) {
 
 };

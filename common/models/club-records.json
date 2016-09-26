@@ -1,6 +1,5 @@
 {
   "name": "ClubRecords",
-  "plural": "clubRecords",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,17 +10,11 @@
   "relations": {
     "clubRecords": {
       "type": "hasMany",
-      "model": "results",
+      "model": "Results",
       "foreignKey": ""
     }
   },
   "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
     {
       "accessType": "*",
       "principalType": "ROLE",

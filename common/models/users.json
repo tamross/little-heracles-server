@@ -1,6 +1,5 @@
 {
   "name": "Users",
-  "plural": "users",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -47,17 +46,17 @@
   "relations": {
     "children": {
       "type": "hasMany",
-      "model": "users",
+      "model": "Users",
       "foreignKey": ""
     },
     "parents": {
       "type": "hasMany",
-      "model": "users",
+      "model": "Users",
       "foreignKey": ""
     },
     "personalBests": {
       "type": "hasMany",
-      "model": "results",
+      "model": "Results",
       "foreignKey": ""
     }
   },

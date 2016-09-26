@@ -1,6 +1,5 @@
 {
   "name": "Competition",
-  "plural": "competitions",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -17,17 +16,11 @@
   "relations": {
     "events": {
       "type": "hasMany",
-      "model": "events",
+      "model": "Events",
       "foreignKey": ""
     }
   },
   "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
     {
       "accessType": "*",
       "principalType": "ROLE",
