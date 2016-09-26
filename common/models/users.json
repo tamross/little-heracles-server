@@ -1,0 +1,86 @@
+{
+  "name": "Users",
+  "plural": "users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "default": "test"
+    },
+    "password": {
+      "type": "string",
+      "required": true,
+      "default": "test"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "test"
+    },
+    "address": {
+      "type": "string",
+      "default": ""
+    },
+    "phone": {
+      "type": "string",
+      "default": ""
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    },
+    "ageGroupManaged": {
+      "type": "string",
+      "default": ""
+    },
+    "ageGroup": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "users",
+      "foreignKey": ""
+    },
+    "parents": {
+      "type": "hasMany",
+      "model": "users",
+      "foreignKey": ""
+    },
+    "personalBests": {
+      "type": "hasMany",
+      "model": "results",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "CLUBOFFICIAL",
+      "permission": "ALLOW",
+      "property": "create"
+    }
+  ],
+  "methods": {}
+}

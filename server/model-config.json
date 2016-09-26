@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MongoDB"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Users": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Events": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Results": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Competition": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "ClubRecords": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}
