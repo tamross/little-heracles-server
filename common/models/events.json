@@ -1,6 +1,5 @@
 {
   "name": "Events",
-  "plural": "events",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -37,12 +36,6 @@
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
     }
   ],
   "methods": {}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDB": {
+    "host": "ds021326.mlab.com",
+    "port": 21326,
+    "url": "",
+    "database": "littleheracles",
+    "password": "adminadmin",
+    "name": "MongoDB",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}

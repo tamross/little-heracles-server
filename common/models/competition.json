@@ -1,5 +1,6 @@
 {
   "name": "Competition",
+  "plural": "competitions",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,7 +10,7 @@
     "date": {
       "type": "date",
       "required": true,
-      "default": null
+      "defaultFn": "now"
     }
   },
   "validations": [],

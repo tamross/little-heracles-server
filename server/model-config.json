@@ -41,7 +41,7 @@
     "dataSource": "MongoDB",
     "public": true
   },
-  "Results": {
+  "ClubRecords": {
     "dataSource": "MongoDB",
     "public": true
   },
@@ -49,7 +49,7 @@
     "dataSource": "MongoDB",
     "public": true
   },
-  "ClubRecords": {
+  "Results": {
     "dataSource": "MongoDB",
     "public": true
   }

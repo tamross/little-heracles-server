@@ -58,7 +58,6 @@ MongoDB.automigrate('Events', function(err) {
   if (!events) {
 
     Events.create([
-        /* u13s */
         {
             kind: "TIMED",
             name: "100m Run",
@@ -134,7 +133,6 @@ MongoDB.automigrate('Events', function(err) {
             name: "High Jump",
             ageGroup: "u13"
         },
-        /* U14 */
         {
             kind: "TIMED",
             name: "100m Run",
